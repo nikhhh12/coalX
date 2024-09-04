@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoalX</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/coallogo.ico" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <h1>CoalX</h1>
+          </div>
+          <ul>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#calculate">Calculate</a></li>
+            <li><a href="#target">Target</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#my-account">My Account</a></li>
+          </ul>
+          <div class="header-info">
+            <p><i class="fas fa-envelope"></i> contact@cmcfc.com</p>
+            <p><i class="fas fa-phone"></i> +123-456-7890</p>
+            <a href="#cookie-policy">Cookie Policy</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content Section -->
+    <main>
+      <!-- Hero Section with Fixed Background -->
+      <section
+        id="information"
+        class="hero"
+        style="background-image: url('/img/background.jpg')"
+      >
+        <div class="hero-content">
+          <h1>Welcome to the Coal Mine Carbon Footprint Calculator</h1>
+          <p>Your path to carbon neutrality starts here.</p>
+          <a href="/public/learnmore.html" class="btn btn-primary">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Calculate Section -->
+      <section id="calculate" class="section-calculate">
+        <div class="container">
+          <h2>Carbon Footprint Calculator</h2>
+          <p>
+            Calculate your carbon footprint using the data from energy
+            consumption, fuel usage, and mining activities.
+          </p>
+          <form id="calculator-form">
+            <!-- Form Fields -->
+            <div class="form-group">
+              <label for="energy-consumption">Energy Consumption (kWh)</label>
+              <input
+                type="number"
+                id="energy-consumption"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="fuel-usage">Fuel Consumption (liters)</label>
+              <input type="number" id="fuel-usage" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="total-coal">Total Coal production (tons)</label>
+              <input type="number" id="total-coal" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="fuel-consumption"
+                >Fuel Consumption for tranportation (liters)</label
+              >
+              <input type="number" id="fuel-consumption" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="waste-quantity"
+                >Quantity of waste generated (tons)</label
+              >
+              <input type="number" id="waste-quantity" class="form-control" />
+            </div>
+            <button id="calculate-btn" class="btn-calculate">Calculate</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Target Section -->
+
+      <section id="target" class="section target">
+        <div class="container">
+          <h2>Our Carbon Neutrality Target</h2>
+          <div class="target-content">
+            <div class="target-text">
+              <h3>What is Carbon Neutrality?</h3>
+              <p>
+                Carbon neutrality refers to achieving a balance between the
+                amount of carbon dioxide (CO2) emissions produced and the amount
+                of carbon dioxide removed from the atmosphere. This state is
+                also known as "net-zero carbon emissions." Carbon neutrality is
+                achieved when the amount of CO2 released into the atmosphere is
+                offset by an equivalent amount of CO2 removal or by purchasing
+                carbon credits.
+              </p>
+              <h3>Why is Carbon Neutrality Important?</h3>
+              <p>
+                Achieving carbon neutrality is crucial in the fight against
+                climate change. By reducing and offsetting emissions,
+                organizations can help slow global warming, protect ecosystems,
+                and contribute to a sustainable future. For businesses, pursuing
+                carbon neutrality can also enhance brand reputation, meet
+                regulatory requirements, and appeal to environmentally conscious
+                consumers.
+              </p>
+            </div>
+            <div class="target-image">
+              <img
+                src="/img/carbon-data-graph.jpg"
+                alt="Carbon Emissions Graph"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about-us" class="section about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            At Coal X, we are committed to driving sustainable change in the energy sector, with a focus on transforming the environmental impact of Indian coal mines. Our mission is to empower these mines to understand and reduce their carbon footprint through innovative technology solutions.
+            <br>
+            <br>
+Our flagship project—a comprehensive web application—is specifically designed to quantify the carbon emissions of coal mining operations and provide actionable insights for achieving carbon neutrality. We believe in the power of data to inform decisions and guide the industry toward a more sustainable future. By leveraging advanced analytics, machine learning, and industry expertise, we help coal mines not only measure their environmental impact but also explore practical pathways to reduce emissions and reach net-zero carbon status.
+            <br>
+            <br>
+At Coal X, we are passionate about creating a cleaner, more sustainable world, and we are dedicated to leading the way in helping the mining industry transition to greener practices. Join us on our journey to make a lasting, positive impact on our planet.
+          </p>
+          <!--<img src="team-photo.jpg" alt="Our Team">-->
+        </div>
+      </section>
+
+      <!-- My Account Section -->
+      <section id="my-account" class="section my-account">
+        <div class="container">
+          <h2>Login / Sign up</h2>
+          <p>
+            Login to view your carbon footprint reports and track your progress
+            towards carbon neutrality.
+            <br>
+            Sign Up if not Registered.
+          </p>
+          <a href="login.html" class="btn btn-primary">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>Consultancy Services</h3>
+          <p>
+            We offer personalized consultancy services to help you reduce your
+            carbon footprint.
+          </p>
+        </div>
+        <div class="footer-section" id="contact">
+          <h3>Contact Us</h3>
+          <p>Email: contact@cmcfc.com</p>
+          <p>Phone: +123-456-7890</p>
+          <p>Address: 1234 Green Energy Ave, City, Country</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
